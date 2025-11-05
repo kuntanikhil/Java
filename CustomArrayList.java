@@ -46,7 +46,7 @@ public class CustomArrayList {
         return data.length;
     }
 
-    public boolean find(int num){
+    public void find(int num){
         if(size == 0){
             System.out.println("No elements to search");
         }
@@ -55,11 +55,10 @@ public class CustomArrayList {
             if(i==num){
                gotit=true;
             }
-            if(gotit){
-                display();
-            }
         }
-        return gotit;
+        if(gotit){
+            display();
+        }
     }
 
     private void resize() {
