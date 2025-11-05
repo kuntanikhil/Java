@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         CustomArrayList list = new CustomArrayList();
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.find(2);
+        for(int i=1;i<=13;i++){
+            list.add(i);
+        }
+        System.out.println(list.getcapacity());
     }
 }
