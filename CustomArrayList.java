@@ -46,6 +46,22 @@ public class CustomArrayList {
         return data.length;
     }
 
+    public boolean find(int num){
+        if(size == 0){
+            System.out.println("No elements to search");
+        }
+        boolean gotit=false;
+        for(int i:data){
+            if(i==num){
+               gotit=true;
+            }
+            if(gotit){
+                display();
+            }
+        }
+        return gotit;
+    }
+
     private void resize() {
         int size = (data.length)*2;
         int[] temp =  new int[size];
